@@ -7,7 +7,7 @@ var _ninja = { exports : {} };
 
 function __require__(url) {
 	if (!ninja[url] || typeof ninja[url] !== 'object') {
-		return;
+		return {};
 	}
 	if (ninja[url].loaded) {
 		return ninja[url].exports;
@@ -30,7 +30,7 @@ ninja["0"] = function (module, exports, __require__) {
   		return 'yyyy';
   	}
   }
-
+    
 };
 
 ninja["1"] = function (module, exports, __require__) {
@@ -38,7 +38,7 @@ ninja["1"] = function (module, exports, __require__) {
   	x : 1,
   	y : __require__('0')
   }
-
+    
 };
 
 for (var prop in ninja) {
