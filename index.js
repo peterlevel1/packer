@@ -330,7 +330,7 @@ var packHelper = {
 
 function __require__(url) {
 	if (!ninja[url] || typeof ninja[url] !== 'object') {
-		return;
+		return {};
 	}
 	if (ninja[url].loaded) {
 		return ninja[url].exports;
